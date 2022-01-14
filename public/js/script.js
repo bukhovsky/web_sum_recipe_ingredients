@@ -1,9 +1,9 @@
-const TwoWayBinding = {
+
+  Vue.createApp({
     data() {
       return {
-        message: 'recipe'
+        message: ''
       }
     }
-  }
-  
-  Vue.createApp(TwoWayBinding).mount('#ingridients_recipe_area')
+  }).mount('#ingridients_recipe_area')
+
