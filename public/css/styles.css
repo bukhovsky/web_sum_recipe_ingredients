@@ -1,4 +1,4 @@
-.demo {
+.ingridients_recipe {
     font-family: sans-serif;
     border: 1px solid #eee;
     border-radius: 2px;
@@ -8,3 +8,7 @@
     user-select: none;
     overflow-x: auto;
   }
+
+ [v-cloak] {
+     display: none;
+ }

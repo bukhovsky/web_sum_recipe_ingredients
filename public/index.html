@@ -11,12 +11,12 @@
 </head>
 <body>
 
-    <div id="ingridients_recipe_area" class="demo">
-      
-        <p style="white-space: pre-line;">{{ message }}</p>
-        <br />
-        <textarea v-model="message" placeholder="Вставьте рецепт"></textarea>
-      </div>
+    <div id="ingridients_recipe_area" class="ingridients_recipe" v-cloak>
+           
+        <textarea @keyup="keyupfunction"  v-model="recipetext" placeholder="Вставьте рецепт" class="recipe"></textarea>
+        <p style="white-space: pre-line;">{{ ingridientstext }}</p>
+     
+    </div>
 
 
 
