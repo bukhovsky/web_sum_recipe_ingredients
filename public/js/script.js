@@ -3,12 +3,12 @@
     data() {
       return {
         recipetext: '',
-        ingridientstext: 'qq'
+        ingridientstext: 'here will be some ingridients: '
       }},
       methods: {
      
         keyupfunction () {
-            this.ingridientstext = "here will be some ingridients"+ this.recipetext
+            this.ingridientstext = "here will be some ingridients: "+ this.recipetext
         
         }
       
