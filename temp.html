@@ -28,14 +28,18 @@ mybutton.onclick = function()
     const textAreaValue = textArea.value
    
     const arrayOfLines = textAreaValue.split("\n")
-   for(let i = 0;i < arrayOfLines.length;i++) 
+     
+
+    for(let i = 0;i < arrayOfLines.length;i++) 
     {
+        let x = arrayOfLines[i].match(/^.+ +\d+ +гр.*$/)
+        if ( x != null) {
     console.log(arrayOfLines[i])
+                          }
     }
+
+
 }
-
-
-
 
 </script>
 </body>
