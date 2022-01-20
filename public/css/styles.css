@@ -1,21 +1,39 @@
 * {
+    box-sizing: border-box;
+}
+
+body {
     background-color: darkgray;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    display: block;
+    
 }
 
+#ingridients_recipe_area {
+    height: 500px;
+   
+}
 .block {
     float: left;
     width: 50%;
-    height: 500px;
+    height: 100%;
     box-sizing: border-box;
    
     padding: 10px;
-   
+    
 }
 
 textarea {
     background-color: white;
+    border: none;
+  border-radius: 5px;
+  /*resize: none;*/
+}
+
+textarea:focus {
+    background-color: lightblue;
+    
 }
 
 

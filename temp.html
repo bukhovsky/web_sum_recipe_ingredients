@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            width: 800px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <textarea id="mytextareaid"></textarea>
+    <button id="mybutton">push me</button>
+
+<script>
+
+const textArea = document.getElementById("mytextareaid")
+const textAreaValue = textArea.value
+const arrayOfLines = textArea.value.split("\n")
+
+mybutton.onclick = function()
+{
+    const textAreaValue = textArea.value
+   
+    const arrayOfLines = textAreaValue.split("\n")
+   for(let i = 0;i < arrayOfLines.length;i++) 
+    {
+    console.log(arrayOfLines[i])
+    }
+}
+
+
+
+
+</script>
+</body>
+</html>
